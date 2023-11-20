@@ -1,0 +1,222 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+    
+}
+
+.home{
+    background-image: url(./src/bg2.jpg);
+    opacity: 2;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 40rem;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+header .logo{
+    color: #ffffff;
+    font-size: 2rem;
+    margin-right: auto;
+    outline: auto;
+    outline-width: 1px;
+    outline-color: rgb(255, 255, 255);
+    outline-offset: 2px;
+}
+
+header .logo span{
+    color: orange;
+}
+
+header .menubtn{
+    cursor: pointer;
+    margin-right: 20px;
+    display: none;
+}
+
+header .menubtn i {
+    filter: invert(1);
+}
+
+header .navbar a {
+    color: white;
+    text-transform: capitalize;
+    margin-right: 15px;
+    position: relative;
+}
+header .navbar a::before{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    height: 3px;
+    width: 100%;
+    transition: .1s linear;
+}
+
+header .navbar a:hover::before{
+    width: 100%;
+    border-bottom: 3px solid orange;
+}
+
+.btn{
+    padding: 10px 15px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.buttons .btn1{
+    padding: 10px 15px;
+    color: orange;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.buttons .btn1:hover{
+    background-color: orange;
+    color: white;
+}
+
+
+.home .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7rem;
+}
+
+.home .wrapper h1{
+    color: white;
+    font-size: 2.5rem;
+}
+.home .wrapper p{
+    color: white;
+    font-size: 1.3rem;
+    padding: 10px 0;
+}
+
+.buttons{
+    margin-top: 1rem;
+   
+}
+.btn2{
+    padding: 10px 15px;
+    color: orange;
+    border: 2px solid white;
+}
+
+.btn2:hover{
+    background-color: orange;
+    color: white;
+}
+.status{
+    padding: 0 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+}
+
+.status .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(2rem,1fr));
+    gap: 1.5rem;
+}
+
+.status .box-container .box{
+    padding: 20px 70px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 5px 10px black;
+}
+
+.status .box-container .box h2{
+    font-size: 3rem;
+    color: black;
+}
+
+.status .box-container .box p{
+    padding: 5px 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.about{
+    padding: 20px 50px;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.about .image{
+    font-size: 1 1 28rem;
+    text-align: center;
+    position: relative;
+}
+
+.about .image::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    /* background-color: orange; */
+    height: 10rem;
+    width: 10rem;
+    top: 15px;
+    left: 15px;
+}
+
+.about .content{
+    flex: 1 1 28rem;
+}
+
+.about .content span{
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    background-color: orange;
+   
+}
+.about .content h1{
+    font-size: 1rem;
+    color: black;
+    
+}
+.about .content p{
+    padding: 1rem 0;
+}
+
+.about .content .award{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3rem,1fr));
+    gap: .5rem;
+    margin: 1rem 0;
+}
+.about .content .award .box{
+    padding: 1rem 2rem;
+    font-size: 17px;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #aaa;
+}
+
+
